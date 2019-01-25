@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>Colin Site{% block title %}{% endblock %}</title>
+    <meta name="description" content="Colin Daugherty's personal website, jump in for an in depth look at his experimenting prototypes of coding projects.">
+    <meta name="keywords" content="web, developer, colin, daugherty, eighteen, nineteen, 2019, website, websites, development, coding, process, logic, backend, html, css, javascript, php, python, flask, ideas, experimenting">
+    {% endblock %}
+</head>
+<body>
+  {% block mainmenu %}
+    <header>
+    {% if onscreen != 'home' %}
+      <h1><a class="header" href="{{url_for('index')}}">Colin Daugherty</a></h1>
+    {% else %}
+      <h1 class="header">Colin Daugherty</h1>
+    {% endif %}
+      <nav class="menu">
+        <ul class="mainmenu">
+          {% if onscreen = 'about' %}
+            <li class="mainmenu">About</li>
+          {% else %}
+            <li class="mainmenu"><a href="{{url_for('about')}}">About</a></li>
+          {% endif %}
+          {% if onscreen = 'projects' %}
+            <li class="mainmenu">Projects</li>
+          {% else %}
+            <li class="mainmenu"><a href="{{url_for('projects')}}">Projects</a></li>
+          {% endif %}
+          {% if onscreen = 'blog' %}
+            <li class="mainmenu">Blog</li>
+          {% else %}
+            <li class="mainmenu"><a href="{{url_for('blog')}}">Blog</a></li>
+          {% endif %}
+          {% if onscreen = 'portfolio' %}
+            <li class="mainmenu">Portfolio</li>
+          {% else %}
+            <li class="mainmenu"><a href="{{url_for('portfolio')}}">Portfolio</a></li>
+          {% endif %}
+          {% if onscreen = 'contact' %}
+            <li class="mainmenu">Contact</li>
+          {% else %}
+            <li class="mainmenu"><a href="{{url_for('contact')}}">Contact</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+  {% endblock %}
+  <div id="content">{% block content %}{% endblock %}</div>
+  <div id="footer">
+    {% block footer %}
+      <nav class="menu">
+        <ul class="footermenu">
+          <li class="footermenu"></li>
+        </ul>
+      </nav>
+    {% endblock %}
+  </div>
+</body>
+</html>
