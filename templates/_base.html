@@ -4,6 +4,8 @@
     {% block head %}
     <meta charset="UTF-8">
     <title>Colin Site- {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='site.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Major+Mono+Display" rel="stylesheet">
     <meta name="description" content="Colin Daugherty's personal website, jump in for an in depth look at his experimenting prototypes of coding projects.">
     <meta name="keywords" content="web, developer, colin, daugherty, eighteen, nineteen, 2019, website, websites, development, coding, process, logic, backend, html, css, javascript, php, python, flask, ideas, experimenting">
     {% endblock %}
@@ -52,9 +54,15 @@
     {% block footer %}
       <nav class="menu">
         <ul class="footermenu">
-          <li class="footermenu"></li>
+          <li class="footermenu"><a href="https://www.linkedin.com/in/colinddaugherty"><i class="cdi cdi-linkedin"></i></a></li>
+          <li class="footermenu"><a href="https://www.github.com/colindaugherty"<i class="cdi cdi-github"></i></a></li>
+          <li class="footermenu"><a href="https://www.twitter.com/colindaugherty"><i class="cdi cdi-twitter"></i></a></li>
+          <li class="footermenu"><a href="https://www.facebook.com/colin.daugherty.16568"><i class="cdi cdi-facebook"></i></a></li>
+          <li class="footermenu"><a href="https://www.instagram.com/colin.d.daugherty"><i class="cdi cdi-instagram"></i></a></li>
+          <li class="footermenu"><a href="https://www.snapchat.com/add/mrcdaug"><i class="cdi cdi-snapchat-ghost"></i></a></li>
         </ul>
       </nav>
+      <script src="https://use.fortawesome.com/19d37d2e.js"></script>
     {% endblock %}
   </div>
 </body>

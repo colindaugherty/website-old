@@ -1,0 +1,54 @@
+/*
+Some Colors -
+
+#F6F6F6 - the white
+#000000 - the black
+#464646 - the gray overlay
+#457360 - green link / highlight color
+
+*/
+
+/* We are going to be starting from mobile first standpoint. It's fun. */
+
+/* body code */
+
+body {
+  background-color: #F6F6F6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*.bodywidth {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* link codes */
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  color: #F6F6F6;
+}
+
+nav a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #F6F6F6;
+  transition: 0.4s;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
