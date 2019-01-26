@@ -13,7 +13,7 @@ Some Colors -
 /* body code */
 
 body {
-  background-color: #F6F6F6;
+  background-color: #000000;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 12pt;
@@ -37,7 +37,7 @@ main {
 header {
   color: #F6F6F6;
   background-color: #000000;
-  padding: 2em;
+  padding: 1%;
 }
 
 header h1 {
@@ -45,7 +45,6 @@ header h1 {
   font-weight: 400;
   font-style: normal;
   margin-top: auto;
-  padding: 1%;
 }
 
 nav.menu {
@@ -76,4 +75,8 @@ nav a:hover:after {
 ul.mainmenu li, ul.footermenu li {
   display: inline;
   padding: 0 3em 0 0;
+}
+
+#footermenu {
+  background-color: #000000
 }
