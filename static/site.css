@@ -44,12 +44,12 @@ header h1 {
   font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
-  margin-top: auto;
+  margin: auto;
 }
 
 nav.menu {
   margin: auto;
-  padding: 1em;
+  padding: 0 1em 0 1em;
 }
 
 nav a {
