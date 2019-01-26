@@ -31,7 +31,18 @@ main {
   margin-right: auto;
 }
 
-/* link codes */
+/* header codes */
+
+header {
+  color: #F6F6F6;
+  background-color: #000000;
+}
+
+header h1 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+}
 
 nav a {
   text-decoration: none;
@@ -46,9 +57,14 @@ nav a:after {
   left: 0;
   width: 0%;
   border-bottom: 2px solid #F6F6F6;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 nav a:hover:after {
   width: 100%;
+}
+
+ul.mainmenu li, ul.footermenu li {
+  display: inline;
+  padding: 0 4em 1em 0;
 }
