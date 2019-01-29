@@ -71,5 +71,24 @@
       <script src="https://use.fortawesome.com/19d37d2e.js"></script>
     {% endblock %}
   </div>
+  {% if onscreen == 'home' %}
+  <span id="top">C O L I N</span>
+  <span id="bottom">C O L I N</span>
+  {% elif onscreen == 'about' %}
+  <span id="top">A B O U T</span>
+  <span id="bottom">A B O U T</span>
+  {% elif onscreen == 'projects' %}
+  <span id="top">P R O J E C T S</span>
+  <span id="bottom">P R O J E C T S</span>
+  {% elif onscreen == 'blog' %}
+  <span id="top">B L O G</span>
+  <span id="bottom">B L O G</span>
+  {% elif onscreen == 'portfolio' %}
+  <span id="top">P O R T F O L I O</span>
+  <span id="bottom">P O R T F O L I O</span>
+  {% elif onscreen == 'contacts' %}
+  <span id="top">C O N T A C T</span>
+  <span id="bottom">C O N T A C T</span>
+  {% endif %}
 </body>
 </html>

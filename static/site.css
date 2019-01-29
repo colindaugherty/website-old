@@ -13,7 +13,7 @@ Some Colors -
 /* body code */
 
 body {
-  background-color: #000000;
+  background-color: #F6F6F6;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 12pt;
@@ -22,16 +22,10 @@ body {
   margin-top: auto;
 }
 
-*.bodywidth {
-  padding: 1%;
-  margin: auto;
-}
-
 /* header codes */
 
 header {
-  color: #F6F6F6;
-  background-color: #000000;
+  color: #000000;
   padding: 1%;
 }
 
@@ -50,7 +44,7 @@ nav.menu {
 nav a {
   text-decoration: none;
   position: relative;
-  color: #F6F6F6;
+  color: #000000;
 }
 
 nav a:after {
@@ -59,8 +53,8 @@ nav a:after {
   bottom: 0;
   left: 0;
   width: 0%;
-  border-bottom: 2px solid #F6F6F6;
-  transition: 0.6s;
+  border-bottom: 2px solid #000000;
+  transition: 0.7s;
 }
 
 nav a:hover:after {
@@ -70,17 +64,24 @@ nav a:hover:after {
 ul.mainmenu li, ul.footermenu li {
   display: inline;
   padding: 0 3em 0 0;
-  color: #F6F6F6;
+  color: #000000;
 }
 
-#footer {
-  background-color: #000000
-  color: #F6F6F6;
-  margin: 1%;
+#top, #bottom {
+  color: #000000
+  position: fixed;
+  z-index: 500;
+  background-color: #F6F6F6
+  margin: 2%;
+  align-content: center;
 }
 
-/* content */
-#content {
-  background-color: #F6F6F6;
-  margin-left: 2%;
+#top {
+  top: auto;
+  bottom: auto;
+}
+
+#bottom {
+  bottom: auto;
+  top: auto;
 }
