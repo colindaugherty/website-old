@@ -11,197 +11,104 @@ https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 
 */
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+body {
+  background-color: #F6F6F6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
 
-/* Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    body {
-      background-color: #F6F6F6;
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      font-size: 48pt;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-    }
-
-    #content {
-      margin: auto;
-      width: 85%;
-      height: 95%;
-    }
-
-    *.bodywidth {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* header codes */
-
-    header {
-      color: #000000;
-      padding: 5%;
-      text-align: center;
-    }
-
-    header nav {
-      border-bottom: 2px solid #000000;
-    }
-
-    #footerheader {
-      border-top: 2px solid #000000;
-      border-bottom: 0px;
-    }
-
-    header h1 {
-      font-family: "Raleway";
-      font-weight: 400;
-      font-style: normal;
-      margin: auto;
-      padding: 4rem;
-    }
-
-    #oneLiner {
-      font-family: "Raleway";
-      font-weight: 400;
-      font-style: normal;
-      font-size: 24pt;
-    }
-
-    nav.menu {
-      margin: auto;
-      padding: 0 1em 0 1em;
-    }
-
-    nav a, a.header {
-      text-decoration: none;
-      position: relative;
-      color: #000000;
-    }
-
-    nav a:after, a.header:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      border-bottom: 2px solid #000000;
-      transition: 0.7s;
-    }
-
-    nav a:hover:after, a.header:hover:after {
-      width: 100%;
-    }
-
-    ul.mainmenu li {
-      display: none;
-      padding: 0 3em 0 0;
-      color: #000000;
-    }
-
-    #footer {
-      text-align: center;
-    }
-
-    #top, #bottom {
-      color: #000000;
-      position: fixed;
-      background-color: #F6F6F6;
-      text-align: center;
-      font-size: 169px;
-      width: -webkit-fill-available;
-    }
-
-    #top {
-      bottom: 95%;
-      border-bottom: 1px solid #000000;
-    }
-
-    #bottom {
-      top: 95%;
-      border-top: 1px solid #000000;
-    }
-
+#content {
+  margin: auto;
+  width: 95%;
+  height: 95%;
 }
 
-@media all and (orientation: landscape) {
-  /* We are going to be starting from mobile first standpoint. It's fun. */
+*.bodywidth {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /* body code */
+/* header codes */
 
-  body {
-    font-size: 12pt;
-  }
+header {
+  color: #000000;
+  padding: 1%;
+}
 
-  #content {
-    width: 95%;
-    height: 95%;
-  }
+header nav {
+  border-bottom: 2px solid #000000;
+}
 
-  /* header codes */
+#footerheader {
+  border-bottom: 2px solid #000000;
+  border-bottom: 0px;
+}
 
-  header {
-    padding: 1%;
-  }
+header h1 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  margin: auto;
+}
 
-  header h1 {
-    margin: auto;
-  }
+#oneLiner {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24pt;
+}
 
-  #oneLiner {
-    font-size: 24pt;
-  }
+nav.menu {
+  margin: auto;
+  padding: 0 1em 0 1em;
+}
 
-  nav.menu {
-    margin: auto;
-    padding: 0 1em 0 1em;
-  }
+nav a, a.header {
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+}
 
-  nav a, a.header {
-    text-decoration: none;
-    position: relative;
-    color: #000000;
-  }
+nav a:after, a.header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #000000;
+  transition: 0.7s;
+}
 
-  nav a:after, a.header:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    border-bottom: 2px solid #000000;
-    transition: 0.7s;
-  }
+nav a:hover:after, a.header:hover:after {
+  width: 100%;
+}
 
-  nav a:hover:after, a.header:hover:after {
-    width: 100%;
-  }
+ul.mainmenu li {
+  display: inline;
+  padding: 0 3em 0 0;
+  color: #000000;
+}
 
-  ul.mainmenu li {
-    display: inline;
-    padding: 0 3em 0 0;
-  }
+#top, #bottom {
+  color: #000000;
+  position: fixed;
+  background-color: transparent;
+  text-align: center;
+  font-size: 84px;
+  width: -webkit-fill-available;
+}
 
-  #top, #bottom {
-    font-size: 84px;
-  }
+#top {
+  bottom: 94%;
+  z-index: -1;
+}
 
-  #top {
-    bottom: 94%;
-  }
-
-  #bottom {
-    top: 93%;
-  }
+#bottom {
+  top: 93%;
+  background-color: #F6F6F6;
+  z-index: -1;
 }
