@@ -44,6 +44,11 @@ header nav {
   border-bottom: 2px solid #000000;
 }
 
+#footerheader {
+  border-bottom: 2px solid #000000;
+  border-bottom: 0px;
+}
+
 header h1 {
   font-family: "Raleway";
   font-weight: 400;
@@ -82,10 +87,6 @@ ul.mainmenu li {
   color: #000000;
 }
 
-#selected {
-  border-bottom: 2px solid #000000;
-}
-
 #top, #bottom {
   color: #000000;
   position: fixed;
@@ -96,7 +97,7 @@ ul.mainmenu li {
 }
 
 #top {
-  bottom: 93%;
+  bottom: 94%;
   z-index: -1;
 }
 

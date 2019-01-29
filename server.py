@@ -12,24 +12,27 @@ def about():
 
 @app.route("/projects")
 def projects():
-    return render_template('coming_soon.html')
+    return render_template('projects.html')
 
 @app.route("/blog")
 def portfolio():
-    return render_template('coming_soon.html')
+    return render_template('blog.html')
 
 @app.route("/portfolio")
 def blog():
-    return render_template('coming_soon.html')
+    return render_template('portfolio.html')
 
 @app.route("/contact")
 def contact():
-    return render_template('coming_soon.html')
+    return render_template('contact.html')
 
 @app.route("/social")
 def social():
-    return render_template('coming_soon.html')
+    return render_template('404.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == "__main__":
     app.run()

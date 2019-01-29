@@ -1,0 +1,17 @@
+{% set onscreen = 'about' %}
+{% extends "_base.html" %}
+{% block title %}404{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <main class="bodywidth">
+    <h6>404 NOT FOUND</h6>
+    <h3>:(</h3>
+    <p>Oh no! Looks like you the page you were looking for is no longer here. Sorry about that :/</p>
+    <p>You can exit this page by using any of the links above or by clicking <a href="#" onclick="history.back()">here</a> to go back a page.
+  </main>
+{% endblock %}
+{% block footer %}
+  {{ super() }}
+{% endblock %}
