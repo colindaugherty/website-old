@@ -8,6 +8,258 @@ Some Colors -
 
 */
 
+/*
+
+media queries provided by css-tricks
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+*/
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+      background-color: #F6F6F6;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 48pt;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+    }
+
+    #content {
+      margin: auto;
+      width: 85%;
+      height: 95%;
+    }
+
+    *.bodywidth {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* header codes */
+
+    header {
+      color: #000000;
+      padding: 5%;
+      text-align: center;
+    }
+
+    header nav {
+      border-bottom: 2px solid #000000;
+    }
+
+    #footerheader {
+      border-top: 2px solid #000000;
+      border-bottom: 0px;
+    }
+
+    header h1 {
+      font-family: "Raleway";
+      font-weight: 400;
+      font-style: normal;
+      margin: auto;
+      padding: 4rem;
+    }
+
+    #oneLiner {
+      font-family: "Raleway";
+      font-weight: 400;
+      font-style: normal;
+      font-size: 24pt;
+    }
+
+    nav.menu {
+      margin: auto;
+      padding: 0 1em 0 1em;
+    }
+
+    nav a, a.header {
+      text-decoration: none;
+      position: relative;
+      color: #000000;
+    }
+
+    nav a:after, a.header:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid #000000;
+      transition: 0.7s;
+    }
+
+    nav a:hover:after, a.header:hover:after {
+      width: 100%;
+    }
+
+    ul.mainmenu li {
+      display: none;
+      padding: 0 3em 0 0;
+      color: #000000;
+    }
+
+    #footer {
+      text-align: center;
+    }
+
+    #top, #bottom {
+      color: #000000;
+      position: fixed;
+      background-color: #F6F6F6;
+      text-align: center;
+      font-size: 169px;
+      width: -webkit-fill-available;
+    }
+
+    #top {
+      bottom: 95%;
+      border-bottom: 1px solid #000000;
+    }
+
+    #bottom {
+      top: 95%;
+      border-top: 1px solid #000000;
+    }
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
 /* We are going to be starting from mobile first standpoint. It's fun. */
 
 /* body code */
@@ -60,6 +312,7 @@ header h1 {
   font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
+  font-size: 24pt;
 }
 
 nav.menu {
