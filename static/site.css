@@ -44,10 +44,6 @@ header nav {
   border-bottom: 2px solid #000000;
 }
 
-#footer nav header {
-  border-top: 2px solid #000000;
-}
-
 header h1 {
   font-family: "Raleway";
   font-weight: 400;
@@ -66,7 +62,7 @@ nav a, a.header {
   color: #000000;
 }
 
-nav a:after, a.header {
+nav a:after, a.header:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -76,7 +72,7 @@ nav a:after, a.header {
   transition: 0.7s;
 }
 
-nav a:hover:after, a.header {
+nav a:hover:after, a.header:hover:after {
   width: 100%;
 }
 
