@@ -1,8 +1,16 @@
-$(function(){
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+var COLINSITE = (function() {
 
   var yearsCoding, currentAge, cYearsElement, aYearsElement, months, days, enabled;
 
-  $("document").ready(
+  function settingUp() {
     enabled = $('#javascriptTest');
     enabled.text("");
     console.log("Javascript Initialized.");
@@ -35,8 +43,15 @@ $(function(){
     cYearsElement.text(yearsCoding);
     aYearsElement = $('#variableAge');
     aYearsElement.text(currentAge);
+  }
 
+  function init() {
+    settingUp();
+  }
 
-  );
+  return {
+    init : init,
+  };
+})();
 
-});
+ready(COLINSITE.init);
