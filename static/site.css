@@ -68,20 +68,18 @@ ul.mainmenu li, ul.footermenu li {
 }
 
 #top, #bottom {
-  color: #000000
-  position: fixed;
-  z-index: 500;
-  background-color: #F6F6F6
-  margin: 2%;
-  align-content: center;
+  color: #000000;
+  position: absolute;
+  background-color: transparent;
+  text-align: center;
+  font-size: 84px;
+  width: -webkit-fill-available;
 }
 
 #top {
-  top: auto;
-  bottom: auto;
+  bottom: 93%;
 }
 
 #bottom {
-  bottom: auto;
-  top: auto;
+  top: 93%;
 }
