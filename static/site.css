@@ -22,6 +22,17 @@ body {
   margin-top: auto;
 }
 
+#content {
+  margin: auto;
+  width: 95%;
+  height: 95%;
+}
+
+*.bodywidth {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* header codes */
 
 header {
@@ -29,7 +40,15 @@ header {
   padding: 1%;
 }
 
-header h1 {
+header nav {
+  border-bottom: 2px solid #000000;
+}
+
+#footer {
+  border-top: 2px solid #000000;
+}
+
+header h1, h1.header {
   font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
@@ -69,7 +88,7 @@ ul.mainmenu li, ul.footermenu li {
 
 #top, #bottom {
   color: #000000;
-  position: absolute;
+  position: fixed;
   background-color: transparent;
   text-align: center;
   font-size: 84px;
@@ -82,4 +101,5 @@ ul.mainmenu li, ul.footermenu li {
 
 #bottom {
   top: 93%;
+  background-color: #F6F6F6;
 }
