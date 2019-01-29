@@ -8,21 +8,21 @@ def index():
 
 @app.route("/about")
 def about():
-    return render_template('coming_soon.html')
+    return render_template('about.html')
 
-@app.route("/about")
+@app.route("/projects")
 def projects():
     return render_template('coming_soon.html')
 
-@app.route("/about")
+@app.route("/blog")
 def portfolio():
     return render_template('coming_soon.html')
 
-@app.route("/about")
+@app.route("/portfolio")
 def blog():
     return render_template('coming_soon.html')
 
-@app.route("/about")
+@app.route("/contact")
 def contact():
     return render_template('coming_soon.html')
 
