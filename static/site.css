@@ -56,6 +56,12 @@ header h1 {
   margin: auto;
 }
 
+#oneLiner {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+}
+
 nav.menu {
   margin: auto;
   padding: 0 1em 0 1em;
@@ -104,4 +110,5 @@ ul.mainmenu li {
 #bottom {
   top: 93%;
   background-color: #F6F6F6;
+  z-index: -1;
 }

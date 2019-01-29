@@ -14,9 +14,9 @@
   {% block mainmenu %}
     <header>
     {% if onscreen != 'home' %}
-      <h1><a class="header" href="{{url_for('index')}}">Colin Daugherty</a></h1>
+      <h1><a class="header" href="{{url_for('index')}}">Colin Daugherty</a><span id="javascriptTest"><br>You do not have javascript enabled. Some parts of the website may not function correctly</span></h1>
     {% else %}
-      <h1 class="header">Colin Daugherty</h1>
+      <h1 class="header">Colin Daugherty<span id="javascriptTest"><br>You do not have javascript enabled. Some parts of the website may not function correctly</span></h1>
     {% endif %}
       <nav class="menu">
         <ul class="mainmenu">
@@ -59,7 +59,7 @@
             <li class="mainmenu">|</li>
             <li class="mainmenu"><a href="https://www.github.com/colindaugherty"<i class="cdi cdi-github"></i></a></li>
             <li class="mainmenu">|</li>
-            <li class="mainmenu"><a href="https://www.twitter.com/colindaugherty"><i class="cdi cdi-twitter"></i></a></li>
+            <li class="mainmenu"><a href="https://www.twitter.com/colinddaugherty"><i class="cdi cdi-twitter"></i></a></li>
             <li class="mainmenu">|</li>
             <li class="mainmenu"><a href="https://www.facebook.com/colin.daugherty.16568"><i class="cdi cdi-facebook"></i></a></li>
             <li class="mainmenu">|</li>
@@ -90,6 +90,12 @@
   {% elif onscreen == 'contacts' %}
   <span id="top">C O N T A C T</span>
   <span id="bottom">C O N T A C T</span>
+  {% elif onscreen == '404' %}
+  <span id="top">E R R O R</span>
+  <span id="bottom">4 0 4</span>
+  {% elif onscreen == '404' %}
+  <span id="top">E R R O R</span>
+  <span id="bottom">5 0 0</span>
   {% endif %}
 </body>
 </html>

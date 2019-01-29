@@ -1,4 +1,4 @@
-{% set onscreen = '404' %}
+{% set onscreen = '500' %}
 {% extends "_base.html" %}
 {% block title %}404{% endblock %}
 {% block head %}
@@ -6,9 +6,9 @@
 {% endblock %}
 {% block content %}
   <main class="bodywidth">
-    <h6>404 NOT FOUND</h6>
+    <h6>500 Server Down/Overloaded</h6>
     <h3>:(</h3>
-    <p>Oh no! Looks like you the page you were looking for is no longer here. Sorry about that :/</p>
+    <p>Oh no! It looks like the server has either crashed or become overloaded. If you are the website administer, please see error log. If you are just a visitor, try again in a few minutes.</p>
     <p>You can exit this page by using any of the links above or by clicking <a href="#" onclick="history.back()">here</a> to go back to the page you were on.
   </main>
 {% endblock %}
