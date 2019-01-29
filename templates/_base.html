@@ -14,34 +14,34 @@
   {% block mainmenu %}
     <header>
     {% if onscreen != 'home' %}
-      <h1><a class="header" href="{{url_for('index')}}">Colin Daugherty</a></h1>
+      <h1><a class="header" href="{{url_for('/')}}">Colin Daugherty</a></h1>
     {% else %}
       <h1 class="header">Colin Daugherty</h1>
     {% endif %}
       <nav class="menu">
         <ul class="mainmenu">
           {% if onscreen == 'about' %}
-            <li class="mainmenu">About</li>
+            <li id="selected" class="mainmenu">About</li>
           {% else %}
             <li class="mainmenu"><a href="{{url_for('about')}}">About</a></li>
           {% endif %}
           {% if onscreen == 'projects' %}
-            <li class="mainmenu">Projects</li>
+            <li id="selected" class="mainmenu">Projects</li>
           {% else %}
             <li class="mainmenu"><a href="{{url_for('projects')}}">Projects</a></li>
           {% endif %}
           {% if onscreen == 'blog' %}
-            <li class="mainmenu">Blog</li>
+            <li id="selected" class="mainmenu">Blog</li>
           {% else %}
             <li class="mainmenu"><a href="{{url_for('blog')}}">Blog</a></li>
           {% endif %}
           {% if onscreen == 'portfolio' %}
-            <li class="mainmenu">Portfolio</li>
+            <li id="selected" class="mainmenu">Portfolio</li>
           {% else %}
             <li class="mainmenu"><a href="{{url_for('portfolio')}}">Portfolio</a></li>
           {% endif %}
           {% if onscreen == 'contact' %}
-            <li class="mainmenu">Contact</li>
+            <li id="selected" class="mainmenu">Contact</li>
           {% else %}
             <li class="mainmenu"><a href="{{url_for('contact')}}">Contact</a></li>
           {% endif %}
@@ -53,7 +53,7 @@
   <div id="footer">
     {% block footer %}
       <nav class="menu">
-        <header><h1><a class="header" href="<a href="mailto:colinddaugherty@gmail.com?subject=Contact_From_Website">Contact me!</a></h1></header>
+        <header><h1><a class="header" href="mailto:colinddaugherty@gmail.com?subject=Contact_From_Website">Contact me!</a></h1></header>
         <ul class="mainmenu">
           <li class="mainmenu"><a href="https://www.linkedin.com/in/colinddaugherty"><i class="cdi cdi-linkedin"></i></a></li>
           <li class="mainmenu">|</li>

@@ -26,6 +26,10 @@ def blog():
 def contact():
     return render_template('coming_soon.html')
 
+@app.route("/social")
+def social():
+    return render_template('coming_soon.html')
+
 
 if __name__ == "__main__":
     app.run()
