@@ -75,8 +75,15 @@ nav a:hover:after {
 ul.mainmenu li, ul.footermenu li {
   display: inline;
   padding: 0 3em 0 0;
+  color: #F6F6F6;
 }
 
-#footermenu {
+#footer {
   background-color: #000000
+}
+
+/* content */
+#content {
+  background-color: #F6F6F6;
+  margin-left: 75%;
 }
