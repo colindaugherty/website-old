@@ -23,16 +23,16 @@ var COLINSITE = (function() {
 
     currentAge = new Date().getFullYear();
     currentAge = currentAge - 1999;
-    if (months === 12) {
-      if (days >=28) {
-        currentAge += 1;
+    if (months != 12) {
+      if (days <=28) {
+        currentAge -= 1;
       }
       else {
-        currentAge += 0;
+        currentAge += 1;
       }
     }
     else {
-      currentAge += 0;
+      currentAge += 1;
     }
     console.log(months);
     console.log(days);
