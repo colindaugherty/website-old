@@ -15,10 +15,10 @@ var COLINSITE = (function() {
     enabled.text("");
     console.log("Javascript Initialized.");
 
-    months = new Date.getMonth();
-    days = new Date.getDate();
+    months = new Date().getMonth()
+    days = new Date().getDate();
 
-    yearsCoding = new Date.getFullYear();
+    yearsCoding = new Date().getFullYear();
     yearsCoding = yearsCoding - 2010;
 
     currentAge = new Date().getFullYear();
